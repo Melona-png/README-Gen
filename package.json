@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/Melona-png/README-Gen#readme",
   "dependencies": {
-    "inquirer": "^9.1.4"
+    "inquirer": "^8.2.4"
   }
 }
