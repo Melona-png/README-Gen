@@ -1,0 +1,26 @@
+{
+  "name": "readme-gen",
+  "version": "0.0.0",
+  "description": "A README generator to be used via terminal.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"&& exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Melona-png/README-Gen.git"
+  },
+  "keywords": [
+    "README",
+    "Generator."
+  ],
+  "author": "Madison Woodward",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Melona-png/README-Gen/issues"
+  },
+  "homepage": "https://github.com/Melona-png/README-Gen#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
