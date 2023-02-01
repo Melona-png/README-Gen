@@ -22,6 +22,26 @@ const questions = [
         name: 'license',
         choices: ["MIT","GPG","MOZILLA","NONE"],
       },
+    {
+        type: 'input',
+        message: 'How do I install this application',
+        name: 'installation',
+      },
+    {
+        type: 'input',
+        message: 'What is the use for this application',
+        name: 'usage',
+      },
+    {
+        type: 'input',
+        message: 'List contributions here',
+        name: 'contributing',
+      },
+    {
+        type: 'input',
+        message: 'Tests',
+        name: 'tests',
+      },
 ];
 
 // TODO: Create a function to write README file
