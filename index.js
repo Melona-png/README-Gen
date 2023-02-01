@@ -20,7 +20,7 @@ const questions = [
         type: 'list',
         message: 'What is the project license under',
         name: 'license',
-        choices: ["MIT","GPG","MOZILLA","NONE"],
+        choices: ["MIT","Apache","GPL","NONE"],
       },
     {
         type: 'input',
@@ -42,14 +42,24 @@ const questions = [
         message: 'Tests',
         name: 'tests',
       },
+    {
+        type: 'input',
+        message: 'What is your Github Username?',
+        name: 'username',
+      },
+    {
+        type: 'input',
+        message: 'What is your Email?',
+        name: 'email',
+      },
 ];
 
-// TODO: Create a function to write README file
+//Function that writes the file
 function writeToFile(fileName, data) {
     return fs.writeFileSync(path.join(process.cwd(),fileName),data)
 }
 
-// TODO: Create a function to initialize app
+//Function that initializes the app
 function init() {
     inquirer.prompt(questions)
     .then(function(answers){

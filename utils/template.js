@@ -1,57 +1,73 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+//Vars
+const licenseList = [
+    {name: "MIT",
+    badge:"https://shields.io/badge/license-MIT-green",
+    link:"https://opensource.org/licenses/MIT",
+},
+
+    {name: "Apache",
+    badge:"https://img.shields.io/badge/license-Apache-blue",
+    link:"https://www.apache.org/licenses/LICENSE-2.0",
+},
+    {name: "GPL",
+    badge:"https://shields.io/badge/license-GPL-blue",
+    link:"https://www.gnu.org/licenses/gpl-3.0.en.html",
+    },
+];
+//Functions for returning license info
 function renderLicenseBadge(license) {
+    return licenseList.find((key) => key.name === license).badge;
+};
 
-}
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
 function renderLicenseLink(license) {
+    return licenseList.find((key) => key.name === license).link;
+};
     
-}
-    
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+
 function renderLicenseSection(license) {
+    return `License used [${license}](${renderLicenseLink(license)})`;
+};
 
-}
-
-// TODO: Create a function to generate markdown for README
+//Markdown function, table of contents, questions
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `# ${data.title}  
+
+  <a href="${renderLicenseLink(data.license)}"><img src="
+    ${renderLicenseBadge(data.license)}" alt="badge image"></a>
 
 
-  ##Description 
-
+  ## Description 
   ${data.description}
 
-  ##TableOfContents  
+  ## TableOfContents  
   [Description](#Description)
   [Installation](#Installation) 
   [Usage](#Usage)  
   [Contributing](#Contributing)  
   [Tests](#Tests)  
 
+  ## License  
+  ${renderLicenseSection(data.license)}
 
-  ##Installation 
+  ## Installation 
   ${data.installation}
 
-  ##Usage
+  ## Usage  
   ${data.usage}
 
-  ##Contributing
+  ## Contributing  
   ${data.contributing}
 
-  ##Tests
+  ## Tests  
   ${data.tests}
 
-  ##Questions
+  ## Questions
+  My Github profile: <a href="https://github.com/
+  ${data.username}">here</a>  
+
+  Email me with questions: ${data.email}  
 `;
-
-
-
-
-
 }
 
 module.exports = generateMarkdown;

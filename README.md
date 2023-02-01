@@ -1,28 +1,36 @@
-# testingonetwothree
+# README Generator  
+
+  <a href="https://opensource.org/licenses/MIT"><img src="
+    https://shields.io/badge/license-MIT-green" alt="badge image"></a>
 
 
-  ##Description 
+  ## Description 
+  This application uses nodeJS to present the user with questions within the terminal. The user's answers will be placed onto a README.md file. 
 
-  it is a bad project
-
-  ##TableOfContents  
+  ## TableOfContents  
   [Description](#Description)
   [Installation](#Installation) 
   [Usage](#Usage)  
   [Contributing](#Contributing)  
   [Tests](#Tests)  
 
+  ## License  
+  License used [MIT](https://opensource.org/licenses/MIT)
 
-  ##Installation 
-  I dont know im not a scientist
+  ## Installation 
+  No installation
 
-  ##Usage
-  there is no use, I'm trying my best okay?
+  ## Usage  
+  To create a professional README.md
 
-  ##Contributing
-  undefined
+  ## Contributing  
+  n/a
 
-  ##Tests
-  nope
+  ## Tests  
+  n/a
 
-  ##Questions
+  ## Questions
+  My Github profile: <a href="https://github.com/
+  test">here</a>  
+
+  Email me with questions: test  
